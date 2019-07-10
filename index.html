@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html >
 <head>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
 	<!-- Primary Meta Tags -->
 	<title>ISKOOOOOOOOOOOOOOOO</title>
 	<meta name="title" content="ISKOOOOOOOOOOOOOOOO">
@@ -35,11 +38,24 @@
 	<!-- Global site tag (gtag.js) - Google Analytics -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-40907859-9"></script>
 	<script>
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
+	  	window.dataLayer = window.dataLayer || [];
+	  	function gtag(){dataLayer.push(arguments);}
+	  	gtag('js', new Date());
 
-	  gtag('config', 'UA-40907859-9');
+	  	gtag('config', 'UA-40907859-9');
+
+	  	let context = new AudioContext();
+
+	  	window.onload = function() {
+    		var context = new AudioContext();
+		}
+
+		document.addEventListener('click', function() {
+		  context.resume().then(() => {
+		  	document.getElementById("iskoooooo").play();
+    		console.log('ISKOOOOOOOOOOOOOOOO');
+		  });
+		});
 	</script>
 
 	<style>
@@ -50,5 +66,8 @@
 	</style>
 </head>
 <body>
+	<div style="display: none;">
+		<audio id="iskoooooo" src="iskoooooo.ogg"></audio>
+	</div>
 </body>
 </html>
